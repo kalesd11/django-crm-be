@@ -57,6 +57,12 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'crm.urls'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_HEADERS = list(default_headers)
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-crm-be.onrender.com",
+    "http://172.16.12.25:3000",
+    "http://localhost:3000",
+]
 
 TEMPLATES = [
     {
