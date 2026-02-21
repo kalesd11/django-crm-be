@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'crm.urls'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "http://172.16.12.25:3000",
 ]
 
 
