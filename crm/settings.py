@@ -55,9 +55,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'crm.urls'
-CORS_ALLOWED_ORIGINS = [
-    "http://172.16.12.25:3000",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 TEMPLATES = [
