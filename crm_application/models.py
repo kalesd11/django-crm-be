@@ -76,7 +76,7 @@ class Project(models.Model):
     type = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     notes = models.TextField()
-    subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE,          related_name='project_subscription')
+    subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE,      related_name='project_subscription')
     createdDate = models.DateTimeField(default=timezone.now)
     releaseDate = models.DateTimeField()
     budget = models.CharField(max_length=255)
